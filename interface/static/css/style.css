@@ -144,7 +144,82 @@ footer {
     flex-direction: column;
     gap: 1.8em;
 }
+
+.content .about {
+    width: 100%;
+    max-width: 50em;
+}
+
+.content .about .title{
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.content .about .description{
+    font-size: 1.1em;
+}
+
+.content .contact {
+    width: 100%;
+    max-width: 50em;
+}
+
+.content .contact .contact-name {
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.content .contact .contact-email {
+    margin-top: 1em;
+}
+
+.content .project {
+    width: 100%;
+    max-width: 50em;
+}
+
+.content .project .project-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.content .project .item {
+    background-color:rgba(255, 255, 255, 0.138);
+}
+
+.content .project .item-title{
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.content .project .item img {
+    width: 100%;
+}
+
+.content .project .page-title {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 0.2em;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1.5em;
+    width: fit-content;
+    padding: 0 0.5em 0.5em 0.5em;
+}
+
 @media only screen and (min-width: 768px) {
+    .content .project .page-title {
+        margin-bottom: 1em;
+    }
+    .content .contact {
+        text-align: center;
+    }
     .home {
         display: flex;
         flex-direction: column;

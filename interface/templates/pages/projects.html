@@ -1,4 +1,22 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
-    <div>Eyyy</div>
+    <div class="project">
+        <a href="/" class="back-btn"><i class="fa-solid fa-arrow-left"></i>Back</a>
+        <div class="page-title">Projects</div>
+        <div class="project-items">
+            <div class="item">
+                <img src="{% static "/images/projects/project1.png" %}">
+                <div class="item-title">Institutional Behavioral Monitoring System</div>
+            </div>
+            <div class="item">
+                <img src="{% static "/images/projects/project2.png" %}">
+                <div class="item-title">Lumine</div>
+            </div>
+            <div class="item">
+                <img src="{% static "/images/projects/project3.png" %}">
+                <div class="item-title">BH Finder</div>
+            </div>
+        </div>
+    </div>
 {% endblock content %}
