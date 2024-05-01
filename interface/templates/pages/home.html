@@ -1,0 +1,39 @@
+{% extends "base.html" %} 
+{% load static %}
+{% block content %}
+    <div class="home">
+        <div class="name">Hi, I'm <div class="subname">Johnzyll Jimeno</div></div>
+        <div class="profile">
+            <img src="{% static "images/profile.jpg" %}">
+            <div class="home-content">
+                <div class="tech-stack">
+                    <div class="tech-stack-title">Full Stack Developer</div>
+                    <div class="tech-stack-icons">
+                        <i class="devicon-react-original"></i>
+                        <i class="devicon-tailwindcss-original"></i>
+                        <i class="devicon-typescript-plain"></i>
+                        <i class="devicon-firebase-plain"></i>
+                        <i class="devicon-express-original"></i>
+                        <i class="devicon-mongodb-plain"></i>
+                    </div>
+                </div>
+                <a href="https://github.com/JohnzExor" target="_blank" class="github">
+                    <i class="devicon-github-original"></i>
+                    Github
+                </a>
+                <div class="navigations">
+                    <a href="/projects">Projects</a>
+                    <a href="/contact">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="qoute">
+            <span>
+            "I am currently engaged in expanding my skill set as a full-stack developer, exploring new technologies and enhancing my proficiency in various aspects of development."
+            </span>
+        </p>
+
+
+    </div>
+{% endblock content %}
